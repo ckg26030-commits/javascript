@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function judge1() {
+            // テキストボックス（id名:data） の値をitemに格納
+            var item = document.getElementById("data").value;
+            //  itemの内容を表示する
+            alert(item);
+            // itemの値が50以上だったら「50以上」
+            // そうでなかったら「50未満」と表示する
+            if (item >= 50) {
+                alert("50以上");
+            } else {
+                alert("50未満");
+            }
+        }
+        function judge2() {
+            var item = document.getElementById("data").value;
+            // 比較は＝＝を使用する
+            if (item == "男") {
+                alert("男です");
+            } else {          //さもなければにはelseを使う       
+                alert("男以外です。");
+
+            }
+
+            if (item != "男") {
+                alert("男以外です");
+            } else {
+                alert("男です。");
+            }
+        }
+        function judge3() {
+            var item1 = document.getElementById("data").value;
+            var item2 = document.getElementById("data").value;
+
+            // 長めの書き方
+            if( item1 >=20 ){
+                if(item2 == "社会人"){
+                    alert("公営競技：OK");
+                }else{
+                    alert("公営競技：NG");
+                }
+            }
+            // 短い書き方
+            // 条件式＆＆条件式　・・・～かつ～　二つの条件同時に成立
+            // 条件式||条件式   ・・・～もしくは～　二つの条件が片方OKなら
+            if(item1 >= 20 && item2 == "社会人"){
+                alert("公営競技：OK");
+            }else{
+                alert("公営競技：NG");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    年齢<input type="text" id="data"><br>
+    学生<input type="text" id="type"><br>
+    <button onclick="judge1()">50より大きいか確認</button>
+    <button onclick="judge2()">「男」チェック</button>
+    <button onclick="judge3()">公営競技ができるのか確認</button>
+
+
+</body>
+
+</html>
