@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <script>
+            document.write("私の名前は近藤です。<br>")
+
+            // document.write("1<br>")
+            // document.write("2<br>")
+            // document.write("3<br>")
+            // i=4;
+
+
+            i = 1;
+            i <= 10
+            for (i = 1; i <= 10; i = i + 1) {
+                document.write(i + "<br>");
+            }
+            for (; i <= 10;) {
+                document.write(i + "<br>");
+                i = i + 1;
+            }
+
+            i = 10
+            i > 0
+            i = i - 1
+            for (i = 10; i > 0; i = i - 1) {
+                document.write(i + "<br>");
+            }
+            for (i = 10; i > 0; i--) {
+                document.write(i + "<br>");
+            }
+
+
+            // countForLoop = countForLoop + 1;
+            // countForLoop ++;
+            // 変数名が長い時
+            // １増やす・１減らすには＋＋、ーーが使われる
+
+            // 数字の１に２を１０回掛ける
+            // ０．変数ansの最初の値は１
+            var ans = 1;
+            // １．変数１pの最初の値は１
+            var lp = 1;
+            // ２．変数１pが１０以下の時は繰り返す
+            for (; lp <= 24 ; lp ++) {
+                // ３．変数ansを２倍のする
+                ans = ans * 2;
+            }
+            document.write("2^24は" + ans + "です<br>");
+            // ４．変数１pを１増やす
+
+            var a = 0x10;  //16進数
+            var a = 0o10;  //8進数
+            var a = 0b1001 //2進数
+            document.write("a:" + a);
+        </script>
+    </h1>
+</body>
+
+</html>
