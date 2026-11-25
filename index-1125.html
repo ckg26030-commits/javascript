@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>tableタグの仕組みの確認</h1>
+    <table border="1">
+        <tr>
+            <script>
+                // var X = 1;
+                // document.write("<td>" + x + "</td>");
+                // x=x+1;
+                for (var x = 1; + x ) {
+                    document.write("<td>" + x + "</td>");
+                }
+
+
+            </script>
+
+
+        </tr>
+    </table>
+    <h1>テーブルを横1行（10マス）作成する</h1>
+    <table>
+        <tr>
+            <script>
+                // 
+                for (var y = 0; y < 10; y++) {
+                    document.write("<td>" + y + "<td>");
+                }
+
+            </script>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+    </table>
+
+    <h1>テーブルを縦1列（10マス）作成する</h1>
+    <table border="1">
+        <script>
+            var x = 1;
+            for (var i = 1; i <= 10; i++) {
+
+                document.write("<tr>");
+                document.write("<td>");
+                document.write(i);
+                document.write("</td>");
+                document.write("</tr>");
+            }
+
+        </script>
+    </table>
+    <table border="1">
+        <tr>
+            <script>
+                for (var x = 1; x <= 100; x++) {
+                    document.write("<tr>");
+                    for (var y = 1; y <= 10; y++) {
+                        document.write("<td>" + x + "," + y + "<td>");
+                    }
+                    document.write("<tr>");
+                }
+            </script>
+        <tr>
+    </table>
+    <table border="1">
+        <tr>
+            <script>
+                for(var x=1; x <20; x++){
+                    if(x>=10){
+                        break;   //この命令が出てきたら今の返しをやめる
+                    }
+                    document.write("<td>"+ X + "<td>");
+                }
+            </script>
+        </tr>
+
+    </table>
+</body>
+
+</html>
